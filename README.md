@@ -1,7 +1,8 @@
 Quantum Programming
 ===
 
-#第一章 : 1-1
+第一章 : 1-1
+---
 內容 : 
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
 from numpy import pi
@@ -21,7 +22,8 @@ circuit.draw(output='mpl')
 說明：此程式是申請完IBM帳號後使用創作者界面，直接用拉圖片式的方式製作而程的量子程式。
   首先import量子程式的Library:qiskit, 用QuantumRegister建立一個量子位元、ClassicalRegister建立古典位元、QuantumCircuit建立量子電路，再來用measure來將量子位元測量後放到古典位元內。
  
-#第二章 : 2-3
+ 第二章 : 2-3
+---
 內容 : 
 from qiskit import *
 import math
@@ -38,7 +40,8 @@ state.draw('bloch')
   首先import量子程式的Library:qiskit, 用QuantumRegister建立一個量子位元、QuantumCircuit建立量子電路，用initialize設定一量子位元得初始狀態。接著import statevector來使用可以描繪布洛赫球面的函數。
 
  
-#第三章 : 3-2
+第三章 : 3-2
+---
 內容 :
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
 from numpy import pi
@@ -75,7 +78,8 @@ circuit.draw()
 
  
 
-#(選填) 加分題 : 1-5
+(選填) 加分題 : 1-5
+---
 內容 : 
 #1-5
 from qiskit import QuantumCircuit, execute
