@@ -4,24 +4,24 @@ Quantum Programming
 第一章 : 1-1
 ---
 內容 : 
-from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
-from numpy import pi
+from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit  
+from numpy import pi  
 
-qreg_q = QuantumRegister(5, 'q')
-creg_c = ClassicalRegister(5, 'c')
-circuit = QuantumCircuit(qreg_q, creg_c)
+qreg_q = QuantumRegister(5, 'q')  
+creg_c = ClassicalRegister(5, 'c')  
+circuit = QuantumCircuit(qreg_q, creg_c)  
 
-circuit.measure(qreg_q[0], creg_c[0])
-circuit.measure(qreg_q[1], creg_c[1])
-circuit.measure(qreg_q[2], creg_c[2])
-circuit.measure(qreg_q[3], creg_c[3])
-circuit.measure(qreg_q[4], creg_c[4])
-circuit.draw(output='mpl')
+circuit.measure(qreg_q[0], creg_c[0])  
+circuit.measure(qreg_q[1], creg_c[1])  
+circuit.measure(qreg_q[2], creg_c[2])  
+circuit.measure(qreg_q[3], creg_c[3])  
+circuit.measure(qreg_q[4], creg_c[4])  
+circuit.draw(output='mpl')  
 
  
 說明：此程式是申請完IBM帳號後使用創作者界面，直接用拉圖片式的方式製作而程的量子程式。
   首先import量子程式的Library:qiskit, 用QuantumRegister建立一個量子位元、ClassicalRegister建立古典位元、QuantumCircuit建立量子電路，再來用measure來將量子位元測量後放到古典位元內。
- 
+
  第二章 : 2-3
 ---
 內容 : 
@@ -102,7 +102,8 @@ q_2: ─╫──╫─┤M├
       ║  ║ └╥┘
 c: 3/═╩══╩══╩═
       0  1  2 
-Total counts for qubit states are: {'000': 1000}
+Total counts for qubit states are: {'000': 1000}  
+
 說明：
 第1行為程式編號註解。
 第2行使用import敘述引入qiskit套件中的QuantumCircuit類別、transpile函數以及execute函數。
